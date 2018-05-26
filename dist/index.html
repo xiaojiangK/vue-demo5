@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>my-vux</title><link href=./static/css/app.60c0787123d6cc8ddee92f3a4343a12c.css rel=stylesheet></head><body><div id=app-box></div><script>(function(doc, win){ 
+				 var docE1 = doc.documentElement, 
+				 resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize', 
+				 
+				 recalc = function(){ 
+					 var clientWidth = docE1.clientWidth; 
+					 if(!clientWidth) return; 
+					 docE1.style.fontSize = 100*(clientWidth/320) + 'px';  
+				 }; 
+				 
+				 if (!doc.addEventListener) return; 
+				 win.addEventListener(resizeEvt,recalc,false); 
+				 doc.addEventListener('DOMContentLoaded',recalc,false); 
+			 })(document,window);</script><style type=text/css>/* 路由切换动画 */
+			.child-view {  
+			  position: absolute; left: 0; top: 0; width: 100%; height: 100%; -webkit-transition: all .5s cubic-bezier(.55,0,.1,1);  transition: all .5s cubic-bezier(.55,0,.1,1);  
+			}  
+			.slide-left-enter, .slide-right-leave-active {  
+			  opacity: 0; filter: aplha(opacity:0); -webkit-transform: translate(100px, 0); transform: translate(100px, 0);  
+			}  
+			.slide-left-leave-active, .slide-right-enter {  
+			  opacity: 0; filter: aplha(opacity:0); -webkit-transform: translate(-100px, 0); transform: translate(-100px, 0);  
+			}</style><script type=text/javascript src=./static/js/manifest.18b9bba22f8c635694b3.js></script><script type=text/javascript src=./static/js/vendor.c27b2d49bcfe16e03dd0.js></script><script type=text/javascript src=./static/js/app.f0eeb1f01c603e5a9ca5.js></script></body></html>
